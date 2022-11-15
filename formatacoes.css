@@ -1,0 +1,120 @@
+img {
+  max-width: 50px;
+  position: absolute;
+  right: 2%;
+  top: 2%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#menu-horizontal {
+  list-style-type: none;
+  padding: 0;
+  position: absolute;
+  top: 1px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background-color: #1e1e1e;
+  border-radius: 5px;
+}
+
+#menu-horizontal li {
+  display: inline;
+  padding: 50px;
+}
+
+#menu-horizontal li a {
+  color: #fff;
+  padding: 10px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+#menu-horizontal li a:hover {
+  color: #9318f8;
+}
+
+body {
+  background-color: #181818;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+h1 {
+  font-family: "Spectral", serif;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.content {
+  background-color: #1e1e1e;
+  padding: 3rem;
+  border-radius: 10px;
+  min-width: 30%;
+  bottom: 5px;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.inputs {
+  padding: 8px 5px;
+  outline: none;
+  border-radius: 5px;
+  background-color: #181818;
+  color: #fff;
+  border: 2px solid #181818;
+  width: 100%;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+.inputs:focus {
+  border-color: #9318f8;
+}
+
+.box-select {
+  display: flex;
+  justify-content: space-evenly;
+  font-weight: bold;
+  gap: 2rem;
+}
+
+button {
+  padding: 1rem;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: #740cc9;
+  color: #fff;
+  cursor: pointer;
+}
+
+.spanRequired {
+  font-size: 12px;
+  margin: 3px 0 0 1px;
+  color: #e63636;
+}
+
+#rodape_formulario {
+  width: 100%;
+  padding: 5px;
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  border-radius: 1px;
+  background-color: #1e1e1e;
+}
