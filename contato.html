@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Página de Contato</title>
+    <link rel="stylesheet" href="formatacoes.css" />
+    <link rel="icon" href="./imagens/logo_unitins.png" />
+  </head>
+  <body id="formulario">
+    <div id="menu_horizontal_formulario">
+      <nav>
+        <ul>
+          <li><a href="index.html"><strong>Home</strong></a></li>
+          <li><a href="#"><strong>Quem Somos</strong></a></li>
+          <li><a href="contato.html"><strong>Contato</strong></a></li>
+          <li><a href="#"><strong>Pág.Trabalho 1</strong></a></li>
+          <li><a href="#"><strong>Pág. Trabalho 2</strong></a></li>
+          <div id="logo_unitins"><img src="./imagens/logo_unitins.png" width="50px" height="50px"></div>
+        </ul>
+      </nav>
+    </div>
+    <main>
+      <h1>Página da Ana Beatriz</h1>
+      
+      <form   id="form">
+      <h2>Formulário de contato</h2>
+      <div class="content_formulário">
+        
+          <label for="name"><strong>Nome:</strong></label>
+          <input
+            id="name"
+            placeholder="Digite seu nome completo"
+            required
+            autofocus
+            class="inputs"
+          />
+        
+          <label for="email"><strong>Email:</strong></label>
+          <input
+            id="email"
+            placeholder="Digite seu melhor email"
+            required
+            class="inputs"
+          />
+      
+          <label for="telephone"><strong>Telefone:</strong></label>
+          <input
+            id="telephone"
+            placeholder="Digite seu telefone"
+            class="inputs"
+          />
+       
+          <label for="state"><strong>Estado</strong></label>
+          <select id="estado" class="inputs">
+            <option selected>Selecione--</option>
+            <option>Acre</option>
+            <option>Alagoas</option>
+            <option>Amapá</option>
+            <option>Amazonas</option>
+            <option>Bahia</option>
+            <option>Ceará</option>
+            <option>Distrito Federal</option>
+            <option>Espírito Santo</option>
+            <option>Pará</option>
+            <option>Tocantins</option>
+          </select>
+        
+          <label for="city"><strong>Cidade</strong></label>
+          <select id="city" class="inputs">
+            <option selected>Selecione--</option>
+            <option>Rio Branco</option>
+            Maceió
+            <option>Macapá</option>
+            <option>Manaus</option>
+            <option>Salvador</option>
+            <option>Fortaleza</option>
+            <option>Brasília</option>
+            <option>Vitória</option>
+            <option>Belém</option>
+            <option>Palmas</option>
+          </select>
+        
+          <label for="cidade">Cidade</label>
+          <select id="cidade" class="inputs">
+            <option selected>Selecione--</option>
+            <option>Rio Branco</option>
+            Maceió
+            <option>Macapá</option>
+            <option>Manaus</option>
+            <option>Salvador</option>
+            <option>Fortaleza</option>
+            <option>Brasília</option>
+            <option>Vitória</option>
+            <option>Belém</option>
+            <option>Palmas</option>
+          </select>
+      
+          <label for="age"><strong>Idade:</strong></label>
+          <input id="age" placeholder="Digite sua idade" class="inputs" />
+
+       <legend><strong>Sexo:</strong></legend>
+        <input type="radio" id="masculino" name="sexo" value="masculino"><label for="masculino">Masculino</label class="box-select">
+          <input type="radio" id="feminino" name="sexo" value="feminino"><label for="feminino">Feminino</label class="box-select">
+            <input type="radio" id="outro" name="sexo" value="outro"><label for="outro">Outro</label class="box-select" >
+      
+
+        <legend><strong>Motivo de Contato</strong></legend>
+        <select id="motivo_de_contato" required class="inputs required">
+            <option selected>Motivo de contato</option>
+            <option>Dúvida</option>
+            <option>Elogio</option>
+            <option>Outro</option>
+        </select>
+
+        <label for="area_de_texto">Área de texto</label>
+            <textarea id="area_de_texto" cols="30" role="10" required class="inputs required"></textarea>
+        
+
+        <div id="button"><button type="submit" id="click"><strong>Enviar</strong></button></div>
+      </form>
+      </div>
+    </main>
+
+    
+    <div id="rodape_formulario">
+      <footer>
+          <p>Desenvolvido por Ana Beatriz Marques e Susanna Motta na disciplina de <a href="https://www.unitins.br/nportal/sistemas-de-informacao-palmas">Desenvolvimento Front-End</a> - 2022</p>
+      </footer>
+      </div>
+
+  </body>
+</html>
