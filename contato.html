@@ -32,17 +32,18 @@
             placeholder="Digite seu nome completo"
             required
             autofocus
-            class="inputs"
-          />
+            class="inputs required"
+          oninput="nameValidate"/>
+          <span class="span-required"> O nome deve possuir no mínimo 3 caracteres</span>
         
           <label for="email"><strong>Email:</strong></label>
           <input
             id="email"
             placeholder="Digite seu melhor email"
             required
-            class="inputs"
+            class="inputs required"
           />
-      
+          <span class="span-required"> Digite um email válido</span>
           <label for="telephone"><strong>Telefone:</strong></label>
           <input
             id="telephone"
@@ -79,42 +80,28 @@
             <option>Belém</option>
             <option>Palmas</option>
           </select>
-        
-          <label for="cidade">Cidade</label>
-          <select id="cidade" class="inputs">
-            <option selected>Selecione--</option>
-            <option>Rio Branco</option>
-            Maceió
-            <option>Macapá</option>
-            <option>Manaus</option>
-            <option>Salvador</option>
-            <option>Fortaleza</option>
-            <option>Brasília</option>
-            <option>Vitória</option>
-            <option>Belém</option>
-            <option>Palmas</option>
-          </select>
       
           <label for="age"><strong>Idade:</strong></label>
           <input id="age" placeholder="Digite sua idade" class="inputs" />
 
        <legend><strong>Sexo:</strong></legend>
-        <input type="radio" id="masculino" name="sexo" value="masculino"><label for="masculino">Masculino</label class="box-select">
-          <input type="radio" id="feminino" name="sexo" value="feminino"><label for="feminino">Feminino</label class="box-select">
-            <input type="radio" id="outro" name="sexo" value="outro"><label for="outro">Outro</label class="box-select" >
-      
+        <input type="radio" id="masculino" name="sexo" value="masculino"><label for="masculino">Masculino</label class="boxSelect required">
+          <input type="radio" id="feminino" name="sexo" value="feminino"><label for="feminino">Feminino</label class="boxSelect required">
+            <input type="radio" id="outro" name="sexo" value="outro"><label for="outro">Outro</label class="boxSelect required" >
+              <span class="span-required"> Preencha esse campo</span>
 
-        <legend><strong>Motivo de Contato</strong></legend>
+        <legend><strong>Motivo de Contato:</strong></legend>
         <select id="motivo_de_contato" required class="inputs required">
             <option selected>Motivo de contato</option>
             <option>Dúvida</option>
             <option>Elogio</option>
             <option>Outro</option>
         </select>
+        <span class="span-required"> Preencha esse campo</span>
 
-        <label for="area_de_texto">Área de texto</label>
+        <label for="area_de_texto"><strong>Área de texto:</strong></label>
             <textarea id="area_de_texto" cols="30" role="10" required class="inputs required"></textarea>
-        
+        <span class="span-required"> Preencha esse campo</span>
 
         <div id="button"><button type="submit" id="click"><strong>Enviar</strong></button></div>
       </form>
@@ -127,6 +114,6 @@
           <p>Desenvolvido por Ana Beatriz Marques e Susanna Motta na disciplina de <a href="https://www.unitins.br/nportal/sistemas-de-informacao-palmas">Desenvolvimento Front-End</a> - 2022</p>
       </footer>
       </div>
-
+      <script src="./main.js"></script>
   </body>
 </html>

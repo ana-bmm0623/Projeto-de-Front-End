@@ -161,6 +161,9 @@ h2 {
 
 .span-required {
   display: none;
+  font: 12px;
+  margin: 3px 0 0 3px;
+  color: #ff0000;
 }
 
 .inputs {

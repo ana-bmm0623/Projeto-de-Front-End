@@ -1,24 +1,22 @@
-const nameInput = document.querySelector("#nome");
-const emailInput = document.querySelector("#email");
-const sexoInput = document.querySelector(".sexo");
-const contatoInput = document.querySelector("#motivo_de_contato");
-const areaTextInput = document.querySelector("#area_de_texto");
-const form = document.querySelector("form");
+const form = document.getElementById("form");
+const campos = document.querySelectorAll(".required");
+const spans = document.querySelectorAll(".span-required");
+const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
 
-const errorMessage = document.querySelector(".span-required");
+function setError(index) {
+  campos[index].getElementsByClassName.border = "2px solid #e6e6e6";
+  spans[index].style.display = "block";
+}
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
+function removeError(index) {
+  campos[index].style.border = "";
+  spans[index].style.display = "none";
+}
 
-  if (
-    nameValue === "" ||
-    emailValue === "" ||
-    sexoValue === "" ||
-    contatoValue === "" ||
-    areaTextValue === ""
-  ) {
-    errorMessage.textContent = "Please fill out the fields!";
-    errorMessage.classList = "error";
-    return;
+function nameValidate() {
+  if (campos[0].ariaValueMax.length < 3) {
+    setError(0);
+  } else {
+    removeError(0);
   }
-});
+}
