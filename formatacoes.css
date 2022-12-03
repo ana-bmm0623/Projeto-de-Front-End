@@ -11,48 +11,57 @@
   top: 15%;
 }
 
+/*homepage*/
+
+#logo_loja {
+  position: absolute;
+  right: 92%;
+  top: 15%;
+}
+
 #menu_horizontal_homepage {
   list-style-type: none;
-  position: absolute;
+  position: relative;
   top: 1px;
   text-align: center;
-  background-color: #66707a;
+  background-color: #110f0f;
   border-radius: 5px;
-  height: 80px;
-  line-height: 2.5;
+  height: 70px;
+  line-height: 2;
 }
 
 #menu_horizontal_homepage li {
   display: inline;
   padding: 50px 10px;
-  color: #10254d;
-  font-size: 30px;
+  color: #fff;
+  font-size: 20px;
 }
 
 #menu_horizontal_homepage li a {
-  font-size: 20px;
-  color: #023e7d;
+  color: #fff;
   padding: 10px;
   display: inline-block;
   text-decoration: none;
 }
 
 #menu_horizontal_homepage li a:hover {
-  color: #0353a4;
+  color: #9318f8;
 }
 
-h1 #heading1_homepage {
+#heading1_homepage {
   text-align: left;
   font-size: 20px;
+  margin-bottom: 1rem;
 }
 
-h2 #heading2_homepage {
+#heading2_homepage {
   text-align: center;
   font-size: 20px;
+  margin-top: 1rem;
 }
 
 #homepage {
-  background-color: #9aa6b3;
+  background-color: #181818;
   font-family: "Open Sans", sans-serif;
   color: #fff;
   display: inline-block;
@@ -60,19 +69,26 @@ h2 #heading2_homepage {
   align-items: center;
 }
 
+#info_homepage {
+  line-height: 30px;
+}
+
 #content_homepage {
-  padding: 2rem;
+  padding: 1rem;
   margin-left: 25%;
   margin-right: 25%;
   margin-bottom: 10%;
   border-radius: 10px;
   text-align: justify;
+  background-color: #1e1e1e;
 }
 #content_homepage a {
   text-decoration: none;
   color: #fff;
 }
 
+.blocks {
+}
 #footer_homepage {
   width: 100%;
   padding: 5px;
@@ -90,25 +106,132 @@ h2 #heading2_homepage {
   color: #fff;
 }
 
-#menu_horizontal_formulario {
+/*quemsomos*/
+
+#menu_horizontal_quemsou {
   list-style-type: none;
-  position: absolute;
+  position: relative;
   top: 1px;
   text-align: center;
   background-color: #110f0f;
   border-radius: 5px;
-  height: 60px;
+  height: 70px;
   line-height: 2;
+  font-family: "Open Sans", sans-serif;
+}
+
+#menu_horizontal_quemsou li {
+  display: inline;
+  padding: 50px 10px;
+  color: #fff;
+  font-size: 20px;
+}
+
+#menu_horizontal_quemsou li a {
+  color: #fff;
+  padding: 10px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+#menu_horizontal_quemsou li a:hover {
+  color: #9318f8;
+}
+
+#quemsou {
+  height: 100%;
+  background-color: #181818;
+  color: #f5f5f5;
+}
+
+#h1_quemsou {
+  text-align: left;
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+
+#h2_quemsou {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0 2rem 0;
+  font-size: 40px;
+}
+#content_quemsou {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 800px;
+  margin: auto;
+  grid-gap: 40px;
+  padding: 2rem;
+
+  border-radius: 10px;
+}
+.card {
+  background-color: #1e1e1e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 35px 40px;
+  box-shadow: 6px 6px 10px #9318f8;
+  width: 20rem;
+  margin-bottom: 3rem;
+}
+.card h3 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-bottom: 5px;
+}
+.p_quemsou {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  text-align: justify;
+}
+.img_quemsou {
+  size: 40px;
+  width: 100px;
+  border-radius: 10%;
+}
+
+#footer_quemsou {
+  width: 100%;
+  padding: 5px;
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  border-radius: 1px;
+  background-color: #1e1e1e;
+}
+
+#footer_quemsou a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/*formulário*/
+
+#menu_horizontal_formulario {
+  list-style-type: none;
+  position: relative;
+  top: 1px;
+  text-align: center;
+  background-color: #110f0f;
+  border-radius: 5px;
+  height: 70px;
+  line-height: 2;
+  font-family: "Open Sans", sans-serif;
 }
 
 #menu_horizontal_formulario li {
   display: inline;
   padding: 50px 10px;
   color: #fff;
+  font-size: 20px;
 }
 
 #menu_horizontal_formulario li a {
-  font-size: 20px;
   color: #fff;
   padding: 10px;
   display: inline-block;
@@ -119,28 +242,22 @@ h2 #heading2_homepage {
   color: #9318f8;
 }
 
-h1 {
+#h1_contato {
   text-align: left;
   font-size: 20px;
-  padding-top: 8%;
+  margin-bottom: 1rem;
 }
 
-h2 {
+#h2_contato {
   text-align: center;
-  font-size: 35px;
-  margin-bottom: 4rem;
-}
-
-h1,
-h2 {
-  font-family: "Spectral", serif;
+  font-size: 20px;
+  margin-top: 1rem;
 }
 
 #formulario {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #181818;
   color: #fff;
-  display: flex;
   height: 100%;
   justify-content: center;
 }
