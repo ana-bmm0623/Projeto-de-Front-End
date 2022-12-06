@@ -28,6 +28,7 @@
   border-radius: 5px;
   height: 70px;
   line-height: 2;
+  font-family: "Open Sans", sans-serif;
 }
 
 #menu_horizontal_homepage li {
@@ -60,6 +61,10 @@
   margin-top: 1rem;
 }
 
+#h3_homepage {
+  margin-bottom: 3rem;
+}
+
 #homepage {
   background-color: #181818;
   font-family: "Open Sans", sans-serif;
@@ -67,17 +72,17 @@
   display: inline-block;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 3rem;
 }
 
 #info_homepage {
   line-height: 30px;
+  font-size: 25px;
 }
 
 #content_homepage {
-  padding: 1rem;
-  margin-left: 25%;
-  margin-right: 25%;
-  margin-bottom: 10%;
+  padding: 2rem;
+  margin: 10% 8%;
   border-radius: 10px;
   text-align: justify;
   background-color: #1e1e1e;
@@ -87,8 +92,24 @@
   color: #fff;
 }
 
-.blocks {
+#imagens_horizontal {
+  display: flex;
+  justify-content: center;
 }
+
+.img_homepage {
+  margin: 3rem;
+  width: 200px;
+  height: 200px;
+}
+
+#info_img a {
+  text-decoration: none;
+  color: #fff;
+  margin: 2rem;
+  display: flex;
+}
+
 #footer_homepage {
   width: 100%;
   padding: 5px;
@@ -163,7 +184,6 @@
   margin: auto;
   grid-gap: 40px;
   padding: 2rem;
-
   border-radius: 10px;
 }
 .card {
@@ -251,7 +271,8 @@
 #h2_contato {
   text-align: center;
   font-size: 20px;
-  margin-top: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 #formulario {
@@ -264,7 +285,7 @@
 
 .content_formulário {
   background-color: #1e1e1e;
-  padding: 2rem;
+  padding: 4rem;
   margin-left: 25%;
   margin-right: 25%;
   border-radius: 10px;
@@ -274,6 +295,7 @@
   display: flex;
   flex-direction: column;
   gap: 4rem;
+  margin-bottom: 2rem;
 }
 
 .span-required {
