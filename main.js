@@ -20,3 +20,34 @@ function nameValidate() {
     removeError(0);
   }
 }
+
+///////////////////////////////////////////////////////////////////////////////////
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlide(n) {
+  showSlides((slideIndex = +n));
+}
+
+function currentSlide(n) {
+  showSlides((slideIndex = n));
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("slides_imagens");
+  let botoes = document.getElementsByClassName("botao");
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  for (i = 0; i < botoes.length; i++) {
+    botoes[i].className = botoes[i].className.replace(" active", "");
+  }
+  slides[slideIndex - 1].style.display = "block";
+  botoes[slideIndex - 1].className += " active";
+}

@@ -22,10 +22,10 @@
             <a href="./contato.html"><strong>Contato</strong></a>
           </li>
           <li>
-            <a href="#"><strong>Pág.Trabalho 1</strong></a>
+            <a href="./pag.trabalho1.html"><strong>Dispositivos móveis</strong></a>
           </li>
           <li>
-            <a href="#"><strong>Pág. Trabalho 2</strong></a>
+            <a href="./pag.trabalho2.html"><strong>Itens de Informática</strong></a>
           </li>
           <div id="logo_unitins">
             <img src="./imagens/logo_unitins.png" width="50px" height="50px" />
@@ -56,23 +56,55 @@
 
       <h3 id="h3_homepage">O que você está procurando?</h3>
 
-    <div id="imagens_horizontal">
-      
-        <img src="./imagens/computador_link.jpeg" width="200px" height="200px">
-      
-        <img src="./imagens/eletronicos_link.jpeg" width="200px" height="200px">
- 
-        <img src="./imagens/hardware_link.jpeg" width="200px" height="200px">
-      
-        <img src="./imagens/monitor_link.jpeg" width="200px" height="200px">
-      
+    <div class="container">
+      <div class="slider_imagems">
+        <div class="slides_imagens fade">
+            <a href="./pag.trabalho2.html"><img src="./imagens/computador_link.jpeg" width="500px" height="400px" border-radius="25px"></a>
+        </div>
+
+        <div class="slides_imagens fade">
+          <a href="./pag.trabalho2.html"><img src="./imagens/cabo.png" width="500px"  height="400px"></a>
+        </div>
+
+        <div class="slides_imagens fade">
+          <a href="./pag.trabalho2.html"> <img src="./imagens/teclado2.jpg" width="500px"  height="400px"></a>
+        </div>
+
+        <div class="slides_imagens fade">
+          <a href="./pag.trabalho2.html"> <img src="./imagens/IMP.png" width="500px"  height="400px"></a>
+        </div>
+
+        <div class="slides_imagens fade">
+          <a href="./pag.trabalho2.html"> <img src="./imagens/mouse.png" width="500px"  height="400px"></a>
+        </div>
+
+        <div class="slides_imagens fade">
+          <a href="./pag.trabalho1.html"> <img src="./imagens/smartphone1.jpeg" width="500px"  height="400px"></a>
+          </div>
+          
+        <div class="slides_imagens fade">
+          <a href="./pag.trabalho1.html"> <img src="./imagens/tablet1.jpeg" width="500px"  height="400px"></a>
+          </div>
+
+          
+        <div class="slides_imagens fade">
+          <a href="./pag.trabalho1.html"> <img src="./imagens/note1.jpeg" width="500px"  height="400px"></a>
+          </div>
+      <div>
+    </div>
+
+    <div class="botoes">
+      <span class="botao" onclick="currentSlide(1)">  </span>
+      <span class="botao" onclick="currentSlide(2)">  </span>
+      <span class="botao" onclick="currentSlide(3)">  </span>
+      <span class="botao" onclick="currentSlide(4)">  </span>
+      <span class="botao" onclick="currentSlide(5)">  </span>
+      <span class="botao" onclick="currentSlide(6)">  </span>
+      <span class="botao" onclick="currentSlide(7)">  </span>
+      <span class="botao" onclick="currentSlide(8)">  </span>
+
     </div>
     
-    <div id="info_img">
-      <p><a href="./#"><strong>Computadores</strong></a> <a href="./#"><strong>Eletrônicos</strong></a> <a href="./#"><strong>Monitores</strong></a></p> 
-    </div>
-  </main>
-
     <div id="footer_homepage">
       <footer>
         <p>
@@ -83,9 +115,9 @@
           >
             Desenvolvimento Front-End</a
           >
-          - 2022
         </p>
       </footer>
     </div>
   </body>
+  <script src="./main.js"></script>
 </html>
